@@ -13,6 +13,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    transition: filter 0.8s;
 }
 
 h1{
@@ -37,6 +38,7 @@ h1{
     transition: 0.8s;
     color: rgb(25,25,25);
     filter: brightness(0.9);
+    cursor: pointer;
 }
 
 .active.container{
@@ -57,6 +59,8 @@ h1{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px whitesmoke;
+    transition: all 0.8s;
+    opacity: 1;
 }
 
 h4{
@@ -106,4 +110,6 @@ label{
 
 .active.popup-container{
     visibility: hidden;
+    top: 10%;
+    opacity: 0;
 }
