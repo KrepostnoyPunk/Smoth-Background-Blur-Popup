@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    font-family: cursive;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/beautiful-nature-landscape-with-river-vegetation_23-2150705892.jpg?t=st=1701159694~exp=1701163294~hmac=28d20ced28677fd8c0c3714cef3d34a0397a4722877cbdf3554cda2c175f901c&w=1060);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1{
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px black;
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+
+.btn{
+    background-color: rgb(25,25,25);
+    color: whitesmoke;
+    padding: 20px 50px;
+    border: solid whitesmoke;
+    border-radius: 7px;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    transition: 0.8s;
+    color: rgb(25,25,25);
+    filter: brightness(0.9);
+}
+
+.active.container{
+    filter: blur(8px);
+}
+
+.popup-container{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 370px;
+    height: 230px;
+    top: 30%;
+    background-color: rgb(25,25,25);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px whitesmoke;
+}
+
+h4{
+    font-size: 25px;
+    margin: 10px 0;
+    color: lightgreen;
+}
+
+label{
+    color: lightgreen;
+    font-size: 18px;
+}
+
+.popup-btn{
+    background-color: lightgreen;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: rgb(25,25,25) solid;
+    font-family: cursive;
+}
+
+.input{
+    border-radius: 5px;
+    background-color: rgb(25,25,25);
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.input::placeholder{
+    color: lightgray;
+}
+
+.closing-icon{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.closing-icon:hover{
+    color: orangered;
+}
+
+.active.popup-container{
+    visibility: hidden;
+}
